@@ -1,9 +1,13 @@
 
 exports.up = function(knex, Promise) {
-    return knex.schema.createTable('games', game => {
-        game.increments();
+    return knex.schema.createTable('games', tbl => {
+        tbl.increments();
 
-        game.string('title', 100).notNullable();
+        tbl.string('title', 100).notNullable();
+
+        tbl.string('genre', 100).notNullable();
+        
+        tbl.integer('releaseYear');
     });
 };
 

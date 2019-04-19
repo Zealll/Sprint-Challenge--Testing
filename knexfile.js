@@ -1,7 +1,7 @@
 // Update with your config settings.
 localPbConnection = {
   host: 'localhost',
-  database: 'hobbits',
+  database: 'games',
   user: 'Elan',
   password: 'pass'
 }
